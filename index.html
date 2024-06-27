@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina di Registrazione</title>
+</head>
+<body>
+    <h1>Registrazione sito internet</h1>
+    <form action="" method="post">
+
+        <!-- Nome e Mail -->
+        <div>
+            <input type="text" name="firstname" minlength="2" placeholder="Inserisci il tuo nome" required>
+        </div>
+        <div>
+            <input type="text" name="lastname" placeholder="Inserisci il tuo cognome" required>
+        </div>
+        <div>
+            <input type="email" name="email" placeholder="Inserisci la tua email" required>
+        </div>
+
+        <!-- Regione -->
+        <div>
+            <select name="region" id="region" required>
+                <option value="opt1">Abruzzo</option>                
+                <option value="opt2">Basilicata</option>
+                <option value="opt3">Calabria</option>
+                <option value="opt4">Campania</option>
+                <option value="opt5">Emilia Romagna</option>
+                <option value="opt6">Friuli Venezia Giulia</option>
+                <option value="opt7">Lazio</option>
+                <option value="opt8">Liguria</option>
+                <option value="opt9">Lombardia</option>
+                <option value="opt10">Marche</option>
+                <option value="opt11">Molise</option>
+                <option value="opt12">Piemonte</option>
+                <option value="opt13">Puglia</option>
+                <option value="opt14">Sardegna</option>
+                <option value="opt15">Sicilia</option>
+                <option value="opt16">Toscana</option>
+                <option value="opt17">Trentino Alto Adige</option>
+                <option value="opt18">Umbria</option>
+                <option value="opt19">Val d'Aosta</option>
+                <option value="opt20">Veneto</option>
+            </select>
+        </div> 
+
+        <!-- Fascia d'eta' -->
+        <div>  
+            <input type="radio" name="age" value="under18" required>0-18
+            <input type="radio" name="age" value="18plus" required>18+
+        </div>
+
+        <!-- Termini e Submit -->
+        <div>
+            <input type="checkbox" required>Accetta i termini e condizioni
+        </div>
+        <div>
+            <input type="submit" value="Invia">
+        </div>
+        
+    </form>  
+</body>
+</html>
